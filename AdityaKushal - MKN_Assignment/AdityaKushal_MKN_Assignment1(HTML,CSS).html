@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>AdityaKushal - Amul Chocolates</title>
+        <script>
+            function audio()
+            {
+                a = document.getElementById("AUDIO");
+                b = document.getElementById("bon");
+                if(a.paused)
+                {
+                    a.play();
+                    b.innerHTML = "PAUSE";
+                }  
+                else
+                {
+                    a.pause();
+                    b.innerHTML = "PLAY";
+                } 
+            }
+        </script>
+        <audio id="AUDIO" controls style="display: none;">
+            <source src="bgm.wav" type="audio/wav">
+        </audio>
+        <style>
+            .container
+            {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                padding-bottom: 75px;
+            }
+            #nav-menu-container
+            {
+                color: white;
+                font-size: 25px;
+            }
+            footer
+            {
+                padding: 10px;
+            }
+            .credits{
+                background-color: black;
+                padding: 10px;
+                text-align: center;
+            }
+            #hello
+            {
+                flex-direction: row;
+                list-style-type: none;
+                display: flex;
+            }
+        </style>
+    </head>
+    <body style="border: 3px white solid; background-color: black; color: white;">
+        <header>
+            <div class="container" style="padding-bottom: 0px;">
+                <nav id="nav-menu-container">
+                    <ul class="nav-menu" id="hello">
+                        <li class="menu-active"><a href="#hero" style="text-decoration: none;color:white;padding: 15px;">Home</a></li>
+                        <li><a href="#product" style="text-decoration: none;color:white;padding: 15px;">Product</a></li>
+                        <li><a href="#book" style="text-decoration: none;color:white;padding: 15px;">Book Now</a></li>
+                        <li><button id="bon" onclick="audio()" style="padding: 5px;padding-top: 8px;border: 3px gray solid;">PLAY</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <hr style="border: 1px white solid;">
+        <div class="container" id="hero">
+            <h1 style="font-style: italic; font-size: 80px;">Amul Chocolates</h1>
+            <p style="font-size: 30px;"><em>We are a brand dedicated to make high quality chocolates</em></p>
+            <iframe src="https://youtube.com/embed/uqoDt0ygPas" width="700px" height="500px"></iframe>
+        </div>
+        <div class="container" id="product">
+            <h1 style="font-style: italic;">Types of Amul Chocolate</h1>
+            <table border="3" style="padding-left: 3px;">
+                <tr>
+                    <th style="width: 80%; height: 30%;">Dark Chocolate</th>
+                    <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAIkAagMBEQACEQEDEQH/xAAcAAEAAwEBAQEBAAAAAAAAAAAABQYIBAMBAgf/xAA+EAABAwMCAgYIAwYGAwAAAAABAAIDBAUREiEGMQcTQVF0shQiNmFxgaGxJjKRFSNCUsHhFkRkgpKiJCU0/8QAGQEBAAMBAQAAAAAAAAAAAAAAAAMEBQIB/8QAMhEAAgIBAwEGBAUEAwAAAAAAAAECAxEEEiExE0FRYXGhBTKx8CKRwdHhFCNCgSTC8f/aAAwDAQACEQMRAD8A/uKAIAgCAIAgCA+EgAk7AdqAgbpxpw1ai5tde6JkjecTJRJIP9jcn6LzJ6k2cFj6R+HL5d2WyiqJhNICYXTRGNspHNrc759xARMNNFuXp4EAQBAEAQBAeVTUQ0lPJUVU0cMEbS6SSRwa1gHMknYBAVG5dKXCFBlounpT/wCWkjdID/uA0/VeZR6otlRufTjTtBFrssjj/NWTtZ88N1fdMnqiVqr6UeMLvMIKGaCk6zZjKWEav+Tyf6KOdignKXREsKXN7Y8tlUra+9XvavrLhXAkDTLI97c5/l5DcryVkV1Z1Gtv5UeL6F1PRxyuGnU8t6vTjA0hwPzDgo43RlNxXd++P0O5VOMFJ9//AKS/AY/HfD/jB9ip4kEuhqBdkQQBAEAQBAEBW+kj2Cv/AIGXyoDN9hpY6u5sjmYZGBr39WDgyEDIb81S1VjrqbTx058MmjpK1ZcoyWevHjjuJuhudxfcW2+ittFROYNUsb2Y0t2O527COztVC3TUxq7Wc3Lw9TQq1N7t7KFaj4rHcRj3a71WutVOZi5z+p6turQD/EBjHw7N1dj+GiHbPHTP7FFvdfN0xzy8Y+pJxUnElRkCnjpml5cC4t2JcXd5PN3cqcrtDHvz+fhgtxp18+7H5evmcl6tdwoaeGSvqY5Q9+kMY44adPdgdjcKzpNTTdJxrjjBW1elupinZLJ0cCN/HNgP+rH2WgjPl0NOLoiCAIAgCAIAgK30kewV/wDAy+VAZnt81PTVkc9WZxEzJzA4NfnswSQq10ZTrcYYy/HoXKZQhNSnnC8OpYnT0MlI2vpbJJWSyzmM9e90jtmg6j+b4LMVdqs7Kdqikk+ML9jU30uvtYUuTba557v9n44cdPJcLq2BsdLVvgd1cenAjdnlgjsyOxda5QVdblzFPnzRxod7ssUfwya48mextPE1UdM9ZpbnfM5A/RoXC1fw+Hyx9v3JHpPiFj/HL3/Y/F8jjo7ZRWz0gTzxyOlkcDnGc8/1+in0TdtsrtuE0kivrVGqqFG7LTyz9cDDHG1h8WPstRGXLoaYXREEAQBAEAQBAVvpI9gb/wCBl8qAzfYRUG6ReidQJAHHXO3LWDG5PyyqWq2di9+ceXU0NJv7ZbMZ8+hZXXOFxbG/iUh7iBmnpQG5+YP3WUtPPqqPzfJrS1MHw7/ySx+pDU8dLS3qsbeaudskbzomhLgXOzuSRkjbH6q/OVtlEHRFc9z/AJM+uNVeomtRJ8d6JqvoKTWI5eIqqJz2hzWzzZBB5bbKhTfbjdGhNeS8C9fRVnbK9p+b8SNuVjfbYI6gVMc8Uj9ILW4O4JzzPce1aOl1qvk4bcNGfqtC9PFT3ZTOzgkY41sPix9lfRny6GlF0RhAEAQBAEAQFb6SPYK/+Bl8qAzdY5KiO6R+iwNqJHhzDE7YPaRvk9mypapQdT3vC65NDSOauWxZfgW2OjdBj0e22WnnH5NUxeQf+AKxnbu+ec2vT+Wbap2fJCCfrn9EVyjpKequdY2/VD4pGOJe1nN7s7gbHb4d61bbZwpg9Os5+hk1VQstmtS8fuT014aZRJbbNPNKGBjZ5YCMAcuzP1Czq9Jxi61JdcJmhZq+c00tvplojblUXWpDHXJsjGavUaY9Dc+7++VqaWGmhlU9fczNXZqZ4dywvYkOCoyeMbG7I9WqB+PYrecMpNNps0eF2RBAEAQBAEAQFb6SPYK/+Bl8qAzfYZ+oukZ6mSYSB0ZZF+YhwI296paqG+p84xh89ODR0k9lq4znjjryS1Nw46G5PlNsqJKFm8bDKxshcMYzgjtz9FTs+IRlVt3pTfV4eMFyHw9xtzsbiui4yeNBX3X9r109BSB9RM49bG5hOgA7DmMEcvepL6NP2EI2yxFdPMhou1HbznVHLfXy5LHBLfpLXO+WKKOs1jqm4H5ds9pHesxw0Ubkk249/r7GrGeulQ20lPPHp7nJevTP2NRi5OBqTO5xAAG2Hd23aFoaFVdvJ0/Lgoa92/08O2+bJ++CWn/F1oxj/wChuf1C1O9GR/jL77zRIUhCEAQBAEAQBAVvpI9gr/4GXyoDN9iqoqS5Nknc9rHMewvYMuZkYyFR1VcrKsR68dTR0lkYWpy6crjzJllLQRvbM6+3CTSQ7DGSFzvoVRdtsk4qmKz6F5U0xe7tpPHqedsqZKy8XGeG4NtolOfXY0lwzgD1uRHb8VLqK1Xp64uG/Hr+hHp5uzUWSjPZn77yadbZcMrZ+IJNLR6svqtaAfgcbqjDUx5qjQvQvS0ssK2V747+Dgu0UGmOVl19OmJ0kFwOlvftyWpo5Ty4uvajL10a8KSt3s7uC9uLLRt/mG/cK7/kih/hL/X1NCjkpCE+oAgCAIAgCArfSR7A3/wMvlQGdOF5WxXmN7nBuljyCe/SVn66O6jHp9TT0Mtt6fk/oftnFN5c0E1gz/F+5Zz/AEXj+G6XPye7Ol8T1TXzeyFsFHX1s9ReqvQPznsMp7tvsN17e7a4KOnjl9PRHFCptslLUSx3+pL/AOJI6fRBa6GOOkYT6rxgv7+XLPecqrH4ZKeZ3T/F9C2/ica8QpglBe58rjbJoo6i3h0Ur3evBjZo7+79Fb0q1EW4W8ruZV1b004qdXD70SHBrc8WWc7+rUtOx94G6uPqvvuKS+WX33mhRyXZCfUAQBAEAQBAVvpI9gr/AOBl8qAzZaBXm4M/ZRIqsHSRjl25zthVNQ6eyfbfL9+Bf03auxdj8xcLgyjM/wD7kWtseluHPfom1YGeXvysSmVm3Gn3Z9jbuVW7/kbce5XKOmhqK6rZQykQB4ERdG15cDnA9b4fFa87JRri7Fz3930MiFcZ2SVb4zxxn6nbFQl2MSxuJ3bijjIcNt8494XPapd3uzrsm119ke08DqaNsn7p7SQATSNaOXwU1clN4/VkNsHBZ/6klwlI93Ftk9WID0poOGNacZHLHPl91OopNffcV3JuL4+8mhByUhAfUAQBAEAQBAVvpI9gr/4GXyoDNFAacVbDWSTRw4OXQ/mVa1T2f20m/MuUuCn/AHG8eXUmKKn4dNZB1NfWB/Wt0sdCSCc7AkNVC2eu7OW6Cxjx/kv1Q0Lsjics58P4OO6SSQ3qv6l7o8zvzoJb/EVb06UqIbueEVNRJxvnteOWfIqyqzk1Mx2xu8nbuU3ZQ8CHtZ+J2tq6iZmiWd729zjlexrjF5SOZWTksSeSc4MP4ts++M1De3nuF0+q++44Xyy++9GhhyUhEfUAQBAEAQBAVvpI9gb/AOBl8qAzjw7BDU3ZkdTGJItLyWE88NJVDWTlCluLw+PqaWihCdyU1lc/QmKcWOelo6v9mzxGeoETBHMcsdtvzCpT/qoynDenhZ5Reh/SShCfZtZeOGQ10j6u61jNTnaZ3jLzknc81o6d5pi/JGdqI4ukvNnRaI6d8rxU8tO3rAb/ADS6U0ltOtNGDb3nTVRxxyt6r8rm5xqBx8wuqZOS5I9TCMZLaS/B0xbxfY2AbSVbQfdjf+im25aZX3Yi14miwuyIIAgCAIAgCArfST7A3/wMvlQGY4ZHxPD4nuY8ZAc04O6gaTWGi3BtPKJKko6x9PTOjlayPX1kTXuIDSDjVj5KOSg85XXgsQ3JLD6Hpc6KeOaSeR5l1kve7GDk7k47kqcUlFLoe2xbbk+cnjSOjYSZWk5xgjmPqF1JN9CKO1Pk6HuiLwYtWMb6l3DOOSO3a3lEtwgfxrw940fYqREEuhpJdEYQBAEAQBAEBW+kj2Bv/gZfKgMwsLA4dZnRn1tPPChZbiWQ19NcmMjo/Ve7DGwP2x2AfDsULi1yyypKXCOyirQytdS0j2l0EYAecEgb7j3uJJ9wICjkuMslUl8pxT28TS/+OwMlJwGAYBPd7j9PgpI2Y6kdlafMThcx8Mro5WOY9hw5jhgtPvCnTKciY4OP424d8aPKV2upHLoaVXREEAQBAEAQBAVvpI9gb/4GXyoDL4URZEbRHK2RhILSDjKHsXh5Jg0DBHLc3Vfo9dI50sIjlY4HbVp9zsZ2OxxjYrhPjb3Erjz2meSXo7yKWgbUTMYKqRrtL2tztuAWg/12HvULhmWETqxRgpSIisrpK6o66UAHGOeSd+09p35qeEdqwVLJ73kk+C3Z444e8aPKVKiGXQ0yuiIIAgCAIAgCA5rlQU10t9RQV0XW01RGY5Wai3U08xkYI+SA/ndy6FrBOS631tfRO7G6xKz/ALDV/wBlztR2psqly6F77Tgm33GhrcdkgdC4+YfVebT3tCBPCvEvDpqXVnD1ZKHNDRJABI3Gd92ZI/suZRbJq7YxyQFfXT1dQBV561mQA8fvMZ5OPM4XiWBObm8nm0r04J3gg5464eH+sHlK7RzLoacXREEAQBAEAQBAEAQBAEBxXG0266RmO5UFLVsP8M8LXj6hAVW49FfClaXOio5aKRwxqpZnNA+DTlv0XmEdbmcnDvRTbbJfoLoa+pq/RsugjlAbpfy1EtxnA7MBMHjlk/oQ5L08CAIAgCAIAgCAIAgCAIAgCAIAgCAID//Z"></td>
+                </tr>
+                <tr>
+                    <th style="width: 80%; height: 30%;">Milk Chocolate</th>
+                    <td><img src="data:image/jpeg;base64,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"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="container" style="color: white; background-color: black;">
+            <input type="submit" id="book" onclick="location.href='AdityaKushal_MKM_Assignment2(JavaScript).html'" value="Book Now" style="font-size: 20px;height: 100px; width: 39%;border: 7px gray solid;">
+        </div>
+        <hr style="border: 1px white solid;">
+        <footer>
+            <div class="credits">
+                Made by Aditya Kushal - adityak.btech22@rvu.edu.in<br>
+                With help of - <br>
+                <ul style="list-style-type: none;">
+                    <li><a href="https://amul.com/products/chocolate.php" style="color: white;">Amul's Official Website</a><br></li>
+                    <li><a href="https://www.amazon.in" style="color :white;">Amazon for Providing Pictures</a><br></li>
+                    <li><a href="https://soundcloud.com/royaltyfreemusic-nocopyrightmusic" style="color: white;">Soundcloud Royalty Free Music for Providing the Audio</a></li>
+                </ul>            
+            </div>
+        </footer>
+    </body>
+</html>

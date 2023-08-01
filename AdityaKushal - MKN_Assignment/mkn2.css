@@ -1,0 +1,34 @@
+body{
+    color: white;
+    background-color: black;
+    padding-left: 40%;
+    padding-top: 5%;
+}
+#heading
+{
+    font-size: 50px;
+}
+#nvalidation
+{
+    color: red;
+}
+#emailval
+{
+    color: red;
+}
+#numvalidation
+{
+    color: red;
+}
+#phoneval
+{
+    color: red;
+}
+#milkQty
+{
+    padding-left: 25px
+}
+#darkQty
+{
+    padding-left: 25px;
+}

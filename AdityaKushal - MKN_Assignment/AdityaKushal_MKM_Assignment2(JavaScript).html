@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Order</title>
+        <link href=mkn2.css rel="stylesheet">
+        <script src="mkn2.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="heading">Order</h1>
+            <form onsubmit="return Vform(event)">
+
+                <label for="name">Name</label>
+                <input type="text" id="n" placeholder="Enter Your Name"><label id="nvalidation"></label><br>
+
+                <label>Email</label>
+                <input type="text" id="ema"><label id="emailval"></label><br>
+
+                <label id="phone">Phone Number</label>
+                <input type="text" id="phonel" name="phone"><label id="phoneval"></label><br>
+
+                <label for="age">Age</label>
+                <input type="number" id="num"><label id="numvalidation"></label><br>
+
+                <label>Gender</label><br>
+                <input type="radio" name="hi"><label>Male</label><br>
+                <input type="radio" name="hi"><label>Female</label><br>
+
+                <label>Date of Birth</label><br>
+                <input type="date" min="1980" max="2050"><br>
+
+                <label for="products">Products</label><br>
+                <input type="checkbox"><label>Milk Chocolate</label><label>Qty</label><input id="milkQty" type="number" min="1"><br>
+                <input type="checkbox"><label>Dark Chocolate</label><label>Qty</label><input id="darkQty" type="number" min="1"><br>
+
+                <label>Favourite Chocolate - Survey</label><br>
+                <select>
+                    <option>Milk Chocolate</option>
+                    <option>Dark Chocolate</option>
+                </select><br>
+
+                <input type="submit" value="Submit"><br><br>
+
+                <label>Feed Back</label><br>
+
+                <textarea rows="4" cols="50">
+                    Enter text here...
+                    </textarea><br>        
+            </form> 
+
+            <div id="ODETAILS"></div>    
+        </div>
+    </body>
+</html>
