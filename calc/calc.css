@@ -1,0 +1,26 @@
+body
+{
+    background-color: black;
+    color: white;
+    padding-left : 5%;
+    padding-top : 3%;
+}
+#hi
+{
+    margin-bottom : 2%;
+}
+
+#number1
+{
+    margin-bottom : 2%;
+}
+
+#number2
+{
+    margin-bottom : 2%;
+}
+
+#button
+{
+    margin-bottom : 3%;
+}
